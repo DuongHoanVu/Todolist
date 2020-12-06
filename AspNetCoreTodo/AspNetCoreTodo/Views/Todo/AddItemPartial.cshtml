@@ -1,0 +1,11 @@
+
+<! -- expect to pair with TodoItem model at the server side -->
+@model TodoItem
+
+<form asp-action="AddItem" method="POST">
+    
+    <! -- // asp-for = 'Title', means pair with Title of the model property  -->
+    <label asp-for="Title">Add a new item:</label>
+    <input asp-for="Title">
+    <button type="submit">Add</button>
+</form>
